@@ -1,0 +1,34 @@
+.main-box{
+    margin-top: 1rem;
+    display: flex;
+    position: relative;
+}
+.main-box .wrap-box{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.main-box .wrap-box .search-box{
+    font-size: 1.1rem;
+    padding: .70rem .80rem;
+    border-radius: 25px;
+    width: 100%;
+    position: relative;
+}
+.main-box .wrap-box .search-btn{
+    position: absolute;
+    right: 2%;
+    color: var(--purple-color);
+    cursor: pointer;
+    padding-top: .40rem;
+    border: none;
+    outline: 0;
+    background: transparent;
+}
+.main-box .wrap-box .search-box::placeholder{
+    opacity: .65;
+}

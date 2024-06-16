@@ -1,0 +1,43 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow-x: hidden;
+    margin-top: 2rem;
+    align-items: center;
+    width: 100%;
+    
+}
+.about .image{
+    width: 48%;
+}
+.about .image img{
+    padding: 1rem;
+    height: auto;
+}
+.about .content{
+    width: 48%;
+}
+
+
+@media (max-width: 550px){
+    .about{
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .about .image{
+        text-align: center;
+    }
+    .about .image img{
+        width: 80%;
+    }
+    .about .content{
+        width: 40%;
+    }
+
+
+
+}

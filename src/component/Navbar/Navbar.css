@@ -1,0 +1,88 @@
+
+.wrap-navbar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.wrap-navbar .logo{
+    display: flex;
+    align-items: center;
+}
+.wrap-navbar .logo img{
+    width: 50px;
+    height: 40px;
+}
+.wrap-navbar .logo span{
+    padding-left: .30rem;
+    font-size: 1.2rem;
+}
+
+.wrap-navbar .navbar .navbar-collapse{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+    height: 100%;
+    width: 280px;
+    display: flex;
+    padding: 10rem 3rem 0 3rem;
+    transform: translatex(100%);
+    transition: var(--transition);
+}
+.wrap-navbar .navbar .show-navbar-collapse{
+    transform: translateX(0);
+}
+.wrap-navbar .navbar .navbar-collapse .navbar-nav .nav-item{
+    margin-bottom: 1.4rem;
+}
+.wrap-navbar .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+    transition: var(--transition);
+}
+.wrap-navbar .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color: var(--purple-color);
+}
+.wrap-navbar .navbar .navbar-toggler-btn{
+    cursor: pointer;
+}
+.wrap-navbar .navbar .navbar-collapse .navbar-nav .close-btn{
+    cursor: pointer;
+}
+
+
+@media (min-width: 567px){
+    .wrap-navbar .navbar .navbar-collapse{
+        position: relative;
+        height: auto;
+        padding: 0;
+        width: 100%;
+        background-color: transparent;
+        transform: translateX(0);
+        justify-content: flex-end;
+    }
+    .wrap-navbar .navbar .navbar-toggler-btn{
+        display: none;
+        background: transparent;
+        z-index: 11;
+    }
+    .wrap-navbar .navbar .navbar-collapse .navbar-nav .close-btn{
+        display: none;
+    }
+    .wrap-navbar .navbar .navbar-collapse .navbar-nav .nav-item{
+        margin-bottom: 0;
+        margin-left: 2.8rem;
+    }
+    .wrap-navbar .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+        color: var(--black-color);
+        font-weight: 500 !important;
+        opacity: 0.8;
+    }
+    .wrap-navbar .navbar .navbar-collapse .navbar-nav{
+        display: flex;
+    }
+       
+    
+}
+
